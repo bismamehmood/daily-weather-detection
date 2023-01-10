@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "925ff436-8116-41bf-89d2-9baebec0b375",
+		"name": "Weather AI model",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Make prediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tmin\": [21.6],\n    \"tmax\": [25.6],\n    \"wdir\": [312.0],\n    \"wspd\": [12.1],\n    \"pres\": [1019.1]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://faizanmazhar.pythonanywhere.com/predict",
+					"protocol": "http",
+					"host": [
+						"faizanmazhar",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
